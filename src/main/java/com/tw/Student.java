@@ -86,22 +86,4 @@ public class Student {
         String record = name + "|" + math + "|" + chinese + "|" + english + "|" + computer + "|" + getAVG() + "|" + getTotal();
         return record;
     }
-
-    public boolean addStudent(String name, Integer id, Map<String, Float> scole) {
-        this.name = name;
-        this.id = id;
-        if (scole.get("数学") != null) {
-            this.math = scole.get("数学");
-        }
-        if (scole.get("语文") != null) {
-            this.chinese = scole.get("语文");
-        }
-        if (scole.get("英语") != null) {
-            this.english = scole.get("英语");
-        }
-        if (scole.get("编程") != null) {
-            this.computer = scole.get("编程");
-        }
-        return true;
-    }
 }
